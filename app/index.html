@@ -1,14 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
-	<title>Workflow</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Loftschool document</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/clearfix.css">
+	<!--[if lt IE 9]>
+		<script src="bower/html5shiv/dist/html5shiv.min.js">
+		</script>
+		<![endif]-->
 </head>
 <body>
-	<h1>Workflow - часть 1</h1>
-	<p>Просто текст, который мы будем изменять при помощи livereload</p>
+	<div class="wrapper cf">
+		<header class="header">
+			<div class="wide_container">
+				<img class="header__logo" src="pic/logo.png" alt="Loftschool">
+				<ul class="header__social">
+					<li class="gt"></li>
+          <li class="tw"></li>
+          <li class="vk"></li>
+          <li class="fb"></li>
+				</ul>
+			</div>	
+		</header>
+		<div class="container">
+			<aside class="aside">
+				<nav class="nav">
+					<ul>
+						<li><a href="#">Обо мне</a></li>
+						<li><a href="#">Мои работы</a></li>
+						<li><a href="#">Обратная связь</a></li>
+					</ul>
+				</nav>
+				<div class="contacts">
+					<h1>Контакты</h1>
+					<ul>
+						<li><a class="mail" href="mailto:muhammad-114@mail.ru">Muhammad-114@mail.ru</a></li>
+						<li><a class="tel" href="tel:+79886539941">+7 (988) 653-99-41</a></li>
+						<li><a class="skype" href="skype:muhammad-114">muhammad-114</a></li>
+					</ul>
+				</div>
+			</aside>
+			<main class="main">
+				<section class="section">
+					<h1>Основная информация</h1>
+					<div class="info cf">
+						<img src="img/my_photo.jpg" height="150" width="150" alt="" class="photo">
+						<div class="text">
+							<p><span>Меня зовут: </span>Кандаев Магомед Исмаилович</p>
+							<p><span>Мой возраст: </span>32 года</p>
+							<p><span>Мой город: </span>Махачкала</p>
+							<p><span>Моя специализация: </span>FRONTEND разработчик</p>
+							<p><span>Ключевые навыки: </span>
+							<div class="skills cf">
+								<ul>
+									<li><a class="git" href=""></a></li>
+									<li><a class="javascript" href=""></a></li>
+									<li><a class="css" href=""></a></li>
+									<li><a class="html" href=""></a></li>
+								</ul>
+								<ul>
+									<li><a class="xml" href=""></a></li>
+									<li><a class="angular" href=""></a></li>
+									<li><a class="php" href=""></a></li>
+									<li><a class="gulp" href=""></a></li>
+								</ul>
+							</div></p>
+						</div>
+					</div>
+				</section>
+				<section class="section">
+					<h1>Опыт работы</h1>
+					<div class="info">
+						<ul class="about_me">
+							<li class="brief-case"><span class="about_me_head">"ИП Боровицкий" - Продавец дисков</span>
+									<span class="about_me_text">Сентябрь 2005 - Август 2008</span></li>
+							<li class="brief-case"><span class="about_me_head">"ООО Системы безопастности" - Системный администратор</span>
+									<span class="about_me_text">Июнь 2008 - Июль 2010</span></li>
+							<li class="brief-case"><span class="about_me_head">"Магнит, Розничная сеть" - Ведущий аналитик по внедрению Oracle Web Center</span>
+									<span class="about_me_text">Август 2011 - Октябрь 2012</span></li>
+						</ul>
+					</div>
+				</section>
+				<section class="section">
+					<h1>Образование</h1>
+					<div class="info">
+						<ul class="about_me">
+							<li class="school"><span class="about_me_head">Полное среднее. Физико-математический лицей № 30</span>
+									<span class="about_me_text">1994 - 2004</span></li>
+							<li class="graduate"><span class="about_me_head">Незаконченное высшее. СПБГУ ИТМО</span>
+									<span class="about_me_text">Октябрь 2012 - по настоящее время</span></li>
+							<li class="file"><span class="about_me_head">Курсы Loftschool.ru</span>
+									<span class="about_me_text">Ноябрь 2014 - по настоящее время</span></li>
+						</ul>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<a href="#" class="lock">вход</a>
+		<p class="copyright">&copy; 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</p>
+	</footer>
+
+
 	<script src="bower/jquery/jquery.js"></script>
 	<script src="js/main.js"></script>
 </body>
