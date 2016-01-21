@@ -174,7 +174,7 @@ li {
 }
 
 .contacts, .nav {
-	border-radius: 14px;
+	border-radius: 4px;
 	overflow: hidden;
 	margin-top: 37px;
 }
@@ -278,7 +278,7 @@ li {
 	border-radius:4px 4px 0 0;
 }
 
-.section .info {
+.section .info, .list_of_works {
 	background-color: #f0efee;
 	border: 1px solid #bababa;
 }
@@ -413,7 +413,7 @@ li {
 	padding-left: 137px;
 }
 
-.info {
+.info, .list_of_works {
 		border-radius:0 0 4px 4px;
 		overflow: hidden;
 		border: 1px solid #c5c5c5;
@@ -430,7 +430,7 @@ ul.about_me li {
 	border-bottom: 1px solid #dbdbda;
 }
 
-ul.about_me li:last-child {
+ul.about_me li:last-child, .about_me_last_li {
 	border-bottom: none;
 }
 
@@ -472,4 +472,73 @@ a.lock {
 
 a.lock:hover {
 	background: url(../pic/sprite-lock-w23h42.png) no-repeat 0 -21px;
+}
+
+.list_of_works ul {
+	padding: 0 auto;
+	margin: 40px auto 220px;
+	text-align: left;
+}
+
+.list_of_works li {
+	display: inline-block;
+	width: 166px;
+	border-radius: 4px;
+	overflow: hidden;
+	vertical-align: top;
+	border: 1px solid #d2d2d2;
+	margin-right: 33px;
+	margin-bottom: 33px;
+}
+
+.list_of_works li:nth-child(3) {
+	margin-right: 0;
+}
+
+.list_of_works_last_li {
+	height: 134px;
+	background-image: linear-gradient(#fff, #fbf9f9 6%, #edebea);
+}
+
+.polaroid {
+	display: block;
+	background: url(../pic/polaroid.png) 0 0 no-repeat;
+	width: 56;
+	height: 55px;
+	margin: 25px auto 15px 56px;
+}
+
+.add_project {	
+	font-family: OpenSans-Semibold, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	color: #727070;
+	text-decoration: none;
+	margin-left: 22px;
+	margin-top: 15px;
+}
+
+.list_of_works h3 {
+	font-family: OpenSans-Semibold, sans-serif;
+	font-size: 13px;
+	line-height: 22px;
+	color: #727070;
+	background-color: #f2f2f2;
+	border-top: 1px solid #d2d2d2;
+	margin: 0;
+	text-align: center;
+	height: 34px;
+	padding-top: 5px;
+}
+
+.list_of_works p {
+	display: block;
+	font-family: OpenSans-Light, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #727070;
+	background-color: #fff;
+	margin: 0;
+	text-align: center;
+	padding: 5px;
 }
