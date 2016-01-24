@@ -160,7 +160,7 @@ li {
 	border: 1px solid #c2c0c0;
 }
 
-.nav_a:active {
+.nav_a:active, .current {
 	background-color: #7ee8ce;
 	background-image: linear-gradient(#7ee8ce, #3eb799);
 	border: 1px solid #39a68b;
@@ -346,8 +346,7 @@ li {
 
 .list_of_works_img:hover {
 	cursor: pointer;
-/*	opacity: .59;
-*/}
+}
 
 .list_of_works_last_li {
 	height: 134px;
