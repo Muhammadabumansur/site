@@ -9,7 +9,8 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/feedback.css">
 	<link rel="stylesheet" href="css/clearfix.css">
 	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
 	<!--[if lt IE 9]>
@@ -51,8 +52,31 @@
 			<main class="main">
 				<section class="section">
 					<h1 class="section_header">У вас интересный проект? Напишите мне</h1>
-					<div class="feedback_form">
-							
+					<div class="feedback">
+							<form class="feedback_form" action="">
+								<div class="feedback_name_email">
+									<p class="form_text">Имя</p>
+									<input class="feedback_input name" type="text" placeholder="Как к вам обращаться">
+								</div>
+								<div class="feedback_name_email">
+									<p class="form_text">Email</p>
+									<input class="feedback_input e-mail" type="text" placeholder="Куда мне писать">
+								</div>
+								<div class="feedback_message">
+									<p class="form_text">Сообщение</p>
+									<textarea class="message" placeholder="Кратко в чем суть"></textarea>
+								</div>
+								<div class="feedback_captcha cf">
+									<p class="form_text">Введите код, указанный на картинке</p>
+									<div class="captcha">Здесь CAPTCHA</div>
+									<input class="feedback_input captcha_input" type="text" placeholder="Введите код">
+								</div>
+								<div class="buttons cf">
+									<input class="feedback_button feedback_submit" type="submit" value="Отправить">
+									<input class="feedback_button feedback_reset" type="reset" value="Очистить">
+
+								</div>
+							</form>
 					</div>
 				</section>
 			</main>
@@ -61,7 +85,7 @@
 
 	<footer class="footer">
 		<div class="container">
-			<a href="#" class="a_lock">вход</a>
+			<a href="authorization.html" class="a_lock">вход</a>
 			<p class="copyright">&copy; 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</p>
 		</div>
 	</footer>
