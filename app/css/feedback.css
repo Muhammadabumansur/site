@@ -293,6 +293,7 @@ li {
 }
 
 .form_text {
+	display: block;
 	font-family: open_sansregular, sans-serif;
 	color: #727070;
 	font-size: 14px;
@@ -346,7 +347,8 @@ li {
 	margin-top: 10px;
 	width: 190px;
 	height: 80px;
-	background-color: yellow;
+	overflow: hidden;
+	background: #fff url(../pic/captcha-bg.png) center center no-repeat;
 }
 
 .captcha_input {

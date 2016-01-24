@@ -296,7 +296,50 @@ li {
 	font-weight: bold;
 }
 
+.skills {
+	max-width: 320px;
+	float: right;
+	margin-top: -30px;
+	padding-left: 60px;
+}
 
+.skills_list_item {
+		display: block;
+			float: left;
+			margin-right: 25px;
+}
+
+.skills_list_item>a{
+	background: url(../pic/button-back-bg.png) 0 0 repeat-x;
+	display: block;
+	height: 29px;
+	padding: 0 3px;
+	font-family: open_sanssemibold, sans-serif;
+	font-size: 11px;
+	color: #1e7465;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+.skills_list_item>a:before{
+	content:"";
+	display: block;
+	background: url(../pic/button-back-front.png) 0 0 no-repeat;
+	height: 21px;
+	margin-left: -13px;
+	margin-bottom: -18px;
+
+	}
+
+	.skills_list_item>a:after{
+	content:"";
+	display: block;
+	background: url(../pic/button-back-back.png) 0 0 no-repeat;
+	height: 21px;
+	margin-top: -18px;
+	background-position: right;
+	margin-right: -9px;
+	}
 
 /*.skills {
 	position: relative;
