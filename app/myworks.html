@@ -32,6 +32,25 @@
 			</div>	
 		</header>
 		<div class="container">
+<!--  Всплывающее окно добавления проекта  -->
+		<div class="add_project_popup" id="add_project_popup">
+			<span class="adding_project">Добавление проекта</span>
+			<form action="" class="add_project_form">
+				<label class="add_project_label" for="add_project_name">Название проекта</label>
+				<input class="add_project_input add_project_name" id="add_project_name" type="text" placeholder="Введите Название">
+				<label class="add_project_label" for="add_project_image">Картинка проекта</label>
+				<span class="psevdofile">
+		    <input id="psevdofilevalue" class="inputfiletext" type="text" placeholder="Загрузите изображение"/>
+		    <input class="add_project_input add_project_image" id="add_project_image" type="file" size="1" onchange="document.getElementById('psevdoFileValue').value = this.value" name="addImg"/>
+				</span>
+				<label class="add_project_label" for="add_project_url">URL проекта</label>
+				<input class="add_project_input add_project_url" id="add_project_url" type="text" placeholder="Добавьте ссылку">
+				<label class="add_project_label" for="add_project_textarea">Описание</label>
+				<textarea class="add_project_textarea add_project_textarea" id="add_project_textarea" placeholder="Пара слов о вашем проекте"></textarea>
+				<input class="add_project_submit" type="submit" value="Добавить">
+			</form>
+<!--  Конец блока Всплывающее окно добавления проекта  -->
+		</div>
 			<aside class="aside">
 				<nav class="nav">
 					<ul class="nav_ul">

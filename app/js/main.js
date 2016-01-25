@@ -11,7 +11,7 @@
                 e.preventDefault();
 
                 // Triggering bPopup when click event is fired
-                $('#').bPopup();
+                $('#add_project_popup').bPopup();
 
             });
 
