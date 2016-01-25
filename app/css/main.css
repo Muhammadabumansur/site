@@ -50,6 +50,7 @@ html, body {
 	background: #727070 url("../pic/Header-bg.png") repeat-x;
 	border-bottom: 7px solid #fff;
 	box-shadow: 1px 1px rgba(0,0,0,.1);
+	margin-bottom: 37px;
 }
 
 .container {
@@ -157,26 +158,34 @@ li {
 .nav_a:hover {
 	background-color: #e3e1e1;
 	background-image: linear-gradient(#e8e7e7 13%, #e3e1e1, #c2c0c0);
-	border: 1px solid #c2c0c0;
+	/*border: 1px solid #c2c0c0;*/
 }
 
-.nav_a:active, .current {
+.nav_a.current {
 	background-color: #7ee8ce;
 	background-image: linear-gradient(#7ee8ce, #3eb799);
 	border: 1px solid #39a68b;
 }
 
-.contacts, .nav {
-	border-radius: 4px;
+.nav_ul>li:first-child {
+	border-radius: 4px 4px 0 0;
 	overflow: hidden;
-	margin-top: 37px;
+}
+
+.contacts, .nav {
+	border-radius: 5px;
+	overflow: hidden;
+	border: 1px solid #c2c0c0;
+	/*margin-top: 37px;*/
 }
 
 .nav {
-	margin-bottom: 16px;
+	margin-bottom: 37px;
 }
 
 .contacts_header {
+	border-radius: 4px 4px 0 0;
+	overflow: hidden;
 	margin-bottom: 0;
 	margin-top: 0;
 	padding-top: 10px;
@@ -220,7 +229,7 @@ li {
 
 .contacts_li:hover {
 	background-color: #e0c591;
-	background-image: linear-gradient(rgba(251,249,249,0), #e0c591);
+	background-image: linear-gradient(rgba(251,249,249,0.5), #e0c591);
 }
 
 .contacts_a:hover {	
@@ -256,8 +265,9 @@ li {
 }
 
 .section_header {
-	margin-top: 37px;
-	margin-bottom: 0;
+	/*margin-top: 37px;*/
+	margin-top: 0;
+	margin-bottom: 37px;
 	padding-top: 14px;
 	padding-left: 43px;
 	height: 55px;
@@ -266,27 +276,33 @@ li {
 	color: #eeedec;
 	background-color: #a9a8a8;
 	background-image: linear-gradient(#a9a8a8, #7b7878);
-	border: 1px solid #757575;
-	box-shadow: inset 0 1px #c3c2c2;
-	border-radius:4px 4px 0 0;
+	/*border: 1px solid #757575;*/
+	/*box-shadow: inset 0 1px #c3c2c2;*/
+	/*border-radius:4px 4px 0 0;*/
 }
 
-.section .info {
+.section {
 	background-color: #f0efee;
-	border: 1px solid #bababa;
+	border-radius: 5px;
+	overflow: hidden;
+	border: 1px solid #c5c5c5;
+	box-shadow: inset 0 1px #c3c2c2;
+	margin-bottom: 37px;
 }
 
-.photo {
+.my_photo {
 	float: left;
-	display: block;
+	height: 150px; 
+	width: 150px;
+	overflow: hidden;
 	border-radius: 50%;
 	border: 7px solid #fff;
 	box-shadow: 1px 1px rgba(0,0,0,.1);
-	margin: 37px 0 37px 40px;
+	margin: 0 0 37px 40px;
 }
 
 .info .text {
-	margin: 37px 0 0 230px;
+	margin: 0 0 0 230px;
 	font-family: open_sansregular, sans-serif;
 	font-size: 14px;
 	line-height: 14px;
@@ -294,6 +310,10 @@ li {
 
 .info_text_head {
 	font-weight: bold;
+}
+
+.text>p {
+	margin-top: 0;
 }
 
 .skills {
@@ -357,14 +377,9 @@ li {
 	padding-left: 137px;
 }
 
-.info {
-		border-radius:0 0 4px 4px;
-		overflow: hidden;
-		border: 1px solid #c5c5c5;
-}
-
 .ul_about_me {
-	padding: 20px 0;
+	/*padding: 20px 0;*/
+	margin-top: 0;
 }
 
 .ul_about_me_li {
@@ -398,7 +413,7 @@ li {
 	text-align: left;
 	font-family: open_sanslight, sans-serif;
 	font-size: 12px;
-	margin-top: 22px;
+	padding-top: 22px;
 }
 
 .a_lock {
