@@ -155,7 +155,7 @@ li {
 	font-size: 20px;
 }
 
-.nav_a:hover {
+.nav_a:not(#current):hover {
 	background-color: #e3e1e1;
 	background-image: linear-gradient(#e8e7e7 13%, #e3e1e1, #c2c0c0);
 }
@@ -403,10 +403,12 @@ li {
 }
 
 .copyright {
-	text-align: left;
+	display: block;
+	float: right;
+	margin-right: 200px;
 	font-family: open_sanslight, sans-serif;
 	font-size: 12px;
-	padding-top: 22px;
+	padding-top: 10px;
 }
 
 .a_lock {
@@ -417,8 +419,7 @@ li {
   font-family: open_sansbold, sans-serif;
 	font-size: 14px;
 	color: #9c9c9c;
-	margin-right: 60px;
-	margin-left: 170px;
+	margin: 20px 60px 0 170px;	
 	background: url(../pic/sprite-lock-w23h42.png) no-repeat 0 0;
 }
 

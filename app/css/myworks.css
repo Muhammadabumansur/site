@@ -311,7 +311,7 @@ li {
 	background-color: #000;
 }
 
-.list_of_works_li:nth-child(3) {
+.list_of_works_li:nth-child(3n+3) {
 	margin-right: 0;
 }
 
