@@ -164,6 +164,7 @@ li {
 	background-color: #7ee8ce;
 	background-image: linear-gradient(#7ee8ce, #3eb799);
 	border: 1px solid #39a68b;
+	cursor: default;
 }
 
 .nav_ul>li:first-child {

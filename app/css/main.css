@@ -155,7 +155,7 @@ li {
 	font-size: 20px;
 }
 
-.nav_a:not(#current):hover {
+.nav_a::hover {
 	background-color: #e3e1e1;
 	background-image: linear-gradient(#e8e7e7 13%, #e3e1e1, #c2c0c0);
 }
@@ -164,6 +164,7 @@ li {
 	background-color: #7ee8ce;
 	background-image: linear-gradient(#7ee8ce, #3eb799);
 	border: 1px solid #39a68b;
+	cursor: default;
 }
 
 .nav_ul>li:first-child {
