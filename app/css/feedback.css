@@ -149,13 +149,12 @@ li {
 	padding-left: 28px;
 	background-color: #fbf9f9;
 	background-image: linear-gradient(#fff 6%, #fbf9f9, #e9e6e5);
-	border: 1px solid #c2c0c0;
 	font-family: open_sanssemibold, sans-serif;
 	color: #727070;
 	font-size: 20px;
 }
 
-.nav_a:hover {
+.nav_a::hover {
 	background-color: #e3e1e1;
 	background-image: linear-gradient(#e8e7e7 13%, #e3e1e1, #c2c0c0);
 }
@@ -163,17 +162,20 @@ li {
 .nav_a.current {
 	background-color: #7ee8ce;
 	background-image: linear-gradient(#7ee8ce, #3eb799);
-	border: 1px solid #39a68b;
 	cursor: default;
 }
 
+
+.nav_ul>li {
+	border-top: 1px solid #c2c0c0;
+}
+
 .nav_ul>li:first-child {
-	border-radius: 4px 4px 0 0;
-	overflow: hidden;
+	border-top: none;
 }
 
 .contacts, .nav {
-	border-radius: 5px;
+	border-radius: 4px;
 	overflow: hidden;
 	border: 1px solid #c2c0c0;
 }
@@ -183,8 +185,6 @@ li {
 }
 
 .contacts_header {
-	border-radius: 4px 4px 0 0;
-	overflow: hidden;
 	margin-bottom: 0;
 	margin-top: 0;
 	padding-top: 10px;
@@ -196,7 +196,6 @@ li {
 	color: #d0982c;
 	background-color: #f4cc7e;
 	background-image: linear-gradient(#f4cc7e, #dcb15d);
-	border: 1px solid #caa152;
 	box-shadow: inset 0 1px #fff;
 }
 
@@ -215,7 +214,7 @@ li {
 	text-decoration: none;
 	padding: 10px 0 0 70px;
 	background-image: url();
-	border: 1px solid #c2c0c0;
+	border-top: 1px solid #c2c0c0;
 	font-family: open_sansregular, sans-serif;
 	color: #727070;
 	font-size: 14px;
@@ -285,6 +284,12 @@ li {
 	margin-bottom: 37px;
 }
 
+input[type="text"], textarea {
+	color: #000;
+	outline: none;
+}
+
+
 .feedback {
 	background-color: #f0efee;
 	border-radius:0 0 4px 4px;
@@ -316,7 +321,6 @@ li {
 .name, .e-mail {
 	font-family: open_sanslight, sans-serif;
 	font-size: 12px;
-	color: #c7c6c6;
 	margin-top: 8px;
 	padding-left: 8px;
 	width: 190px;
@@ -339,7 +343,6 @@ li {
 .message {
 	font-family: open_sanslight, sans-serif;
 	font-size: 12px;
-	color: #c7c6c6;
 	margin-top: 8px;
 	padding-left: 8px;
 	padding-top: 8px;
@@ -366,7 +369,6 @@ li {
 	margin-top: 30px;
 	font-family: open_sanslight, sans-serif;
 	font-size: 12px;
-	color: #c7c6c6;
 	padding-left: 8px;
 	width: 190px;
 	height: 30px;
