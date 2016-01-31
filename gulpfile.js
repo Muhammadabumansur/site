@@ -1,5 +1,6 @@
 var gulp = require("gulp"),
-	browserSync = require('browser-sync');
+	browserSync = require('browser-sync'),
+	modernizr = require('gulp-modernizr');
 
 gulp.task('server', function() {
 	browserSync({
@@ -18,4 +19,20 @@ gulp.task('watch', function () {
 		]).on('change', browserSync.reload);
 	});
 
-gulp.task('default', ['server', 'watch']);
+gulp.task('modernizr', function() {
+	gulp.src('app/js/*.js')
+		.pipe(modernizr(
+					{
+						"options" : [
+								"setClasses",
+								"html5shiv"
+						],
+						"tests" : ['placeholder', 'cssanimations'],
+						"uglify" : true,
+
+						}
+						))
+		.pipe(gulp.dest("app/js/vendor"))
+	});
+
+gulp.task('default', ['modernizr', 'server', 'watch']);
