@@ -55,23 +55,23 @@
 				<section class="section">
 					<h1 class="section_header">У вас интересный проект? Напишите мне</h1>
 					<div class="feedback">
-							<form class="feedback_form" action="">
+							<form class="feedback_form" id="feedback_form" action="">
 								<div class="feedback_name_email">
 									<label class="form_text" for="feedback_input_name">Имя</label>
-									<input class="feedback_input name" id="feedback_input_name" type="text" placeholder="Как к вам обращаться">
+									<input class="feedback_input name inputfield" id="feedback_input_name" type="text" qtip-content="Вы не ввели имя" placeholder="Как к вам обращаться">
 								</div>
 								<div class="feedback_name_email">
 									<label class="form_text" for="feedback_input_email">Email</label>
-									<input class="feedback_input e-mail" id="feedback_input_email" type="text" placeholder="Куда мне писать">
+									<input class="feedback_input e-mail inputfield" id="feedback_input_email" type="text" qtip-position="right" qtip-content="Вы не ввели E-mail" placeholder="Куда мне писать">
 								</div>
 								<div class="feedback_message">
 									<label class="form_text" for="feedback_message">Сообщение</label>
-									<textarea class="message" id="feedback_message" placeholder="Кратко в чем суть"></textarea>
+									<textarea class="message inputfield" id="feedback_message" qtip-content="Вы не ввели сообщение" placeholder="Кратко в чем суть"></textarea>
 								</div>
 								<div class="feedback_captcha cf">
 									<label class="form_text" for="feedback_input_captcha">Введите код, указанный на картинке</label>
 									<div class="captcha"></div>
-									<input class="feedback_input captcha_input" id="feedback_input_captcha" type="text" placeholder="Введите код">
+									<input class="feedback_input captcha_input inputfield" id="feedback_input_captcha" type="text" qtip-position="right" qtip-content="Вы не ввели секретный код" placeholder="Введите код">
 								</div>
 								<div class="buttons cf">
 									<input class="feedback_button feedback_submit" id="feedback_submit" type="submit" value="Отправить">
@@ -93,10 +93,12 @@
 	</footer>
 
 
-	<script src="bower/jquery/jquery.js"></script>
-	<script src="bower/qtip2/jquery.qtip.js"></script>
-	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
-	<script src="js/main.js"></script>
+	<script src='bower/jquery/dist/jquery.js'></script>
+	<script src='bower/jquery-placeholder/jquery.placeholder.js'></script>
+	<script src='bower/qtip2/jquery.qtip.js'></script>
+	<script src='js/validation-2.js'></script>
+	<script src="js/script-2.js"></script>		
+	<script src='js/main.js'></script>
 
 </body>
 </html>

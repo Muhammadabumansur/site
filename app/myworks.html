@@ -1,158 +1,136 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang='ru-RU'>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset='UTF-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<title>Кандаев Магомед Исмаилович</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="">
-	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/myworks.css">
-	<link rel="stylesheet" href="css/clearfix.css">
-	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+	<meta name='description' content=''>
+	<meta name='keywords' content=''>
+	<meta name='author' content=''>
+	<link rel='stylesheet' href='bower/normalize-css/normalize.css'>
+	<link rel='stylesheet' href='css/fonts.css'>
+	<link rel='stylesheet' href='css/myworks.css'>
+	<link rel='stylesheet' href='css/clearfix.css'>
+	<link rel='icon' type='image/png' href='favicon-16x16.png' sizes='16x16'>
 	<!--[if lt IE 9]>
-		<script src="bower/html5shiv/dist/html5shiv.min.js">
+		<script src='bower/html5shiv/dist/html5shiv.min.js'>
 		</script>
 		<![endif]-->
-	<script src="js/vendor/modernizr.js"></script>
+	<script src='js/vendor/modernizr.js'></script>
 </head>
 <body>
-	<div class="wrapper cf">
-		<header class="header">
-			<div class="wide_container">
-				<a class="header__logo__link" href="index.html"><img class="header__logo" src="pic/logo.png" alt="Loftschool"></a>
-				<ul class="header__social">
-					<li class="social__li"><a href="" class="social__a gt">Github</a></li>
-          <li class="social__li"><a href="" class="social__a tw">Twitter</a></li>
-          <li class="social__li"><a href="" class="social__a vk">Vkontakte</a></li>
-          <li class="social__li"><a href="" class="social__a fb">Facebook</a></li>
+	<div class='wrapper cf'>
+		<header class='header'>
+			<div class='wide_container'>
+				<a class='header__logo__link' href='index.html'><img class='header__logo' src='pic/logo.png' alt='Loftschool'></a>
+				<ul class='header__social'>
+					<li class='social__li'><a href='' class='social__a gt'>Github</a></li>
+          <li class='social__li'><a href='' class='social__a tw'>Twitter</a></li>
+          <li class='social__li'><a href='' class='social__a vk'>Vkontakte</a></li>
+          <li class='social__li'><a href='' class='social__a fb'>Facebook</a></li>
 				</ul>
 			</div>	
 		</header>
-		<div class="container">
+		<div class='container'>
 
 
 
 <!--  Всплывающее окно добавления проекта  -->
 
-		<div class="add_project_popup" id="add_project_popup">
-
-		<!--  Тултипы  -->
-
-		<div class="tooltip tooltip_1">
-		Вы не ввели название!
-		</div>
-			<!-- <div class="triangle_1"></div> -->
-		<div class="tooltip tooltip_2">
-		Вы не выбрали картинку!
-		</div>
-			<!-- <div class="triangle_2"></div> -->
-		<div class="tooltip tooltip_3">
-		Вы не ввели URL!
-		</div>
-			<!-- <div class="triangle_3"></div> -->
-		<div class="tooltip tooltip_4">
-		Вы не ввели описание!
-		</div>
-			<!-- <div class="triangle_4"></div> -->
-
-		<!--  Тултипы - конец  -->
-
-			<span class="adding_project">Добавление проекта</span>
-			<form action="" class="add_project_form">
-				<label class="add_project_label" for="add_project_name">Название проекта</label>
-				<input class="add_project_input add_project_name" id="add_project_name" type="text" placeholder="Введите Название">
-				<label class="add_project_label" for="add_project_image">Картинка проекта</label>
-				<span class="psevdofile">
-		    <input id="psevdofilevalue" class="inputfiletext" type="text" placeholder="Загрузите изображение"/>
-		    <input class="add_project_input add_project_image" id="add_project_image" type="file" size="1" onchange="document.getElementById('psevdoFileValue').value = this.value" name="addImg"/>
+		<div class='add_project_popup b-close' id='add_project_popup'>
+			<span class='adding_project'>Добавление проекта</span>
+			<form action='' class='add_project_form' id='add_project_form'>
+				<label class='add_project_label' for='add_project_name'>Название проекта</label>
+				<input class='inputfield add_project_input add_project_name' id='add_project_name' type='text' qtip-content='Вы не ввели название' placeholder='Введите Название'>
+				<label class='add_project_label' for='add_project_image'>Картинка проекта</label>
+				<span class='psevdofile'>
+		    <input id='psevdofilevalue' class='inputfield inputfiletext' type='text' qtip-content='Вы не загрузили картинку' placeholder='Загрузите изображение'>
+		    <input class='add_project_input add_project_image' id='add_project_image' type='file' size='1' onchange='document.getElementById('psevdoFileValue').value = this.value'>
 				</span>
-				<label class="add_project_label" for="add_project_url">URL проекта</label>
-				<input class="add_project_input add_project_url" id="add_project_url" type="text" placeholder="Добавьте ссылку">
-				<label class="add_project_label" for="add_project_textarea">Описание</label>
-				<textarea class="add_project_textarea add_project_textarea" id="add_project_textarea" placeholder="Пара слов о вашем проекте"></textarea>
-				<input class="add_project_submit" id="add_project_submit" type="submit" value="Добавить">
+				<label class='add_project_label' for='add_project_url'>URL проекта</label>
+				<input class='inputfield add_project_input add_project_url' id='add_project_url' type='text' qtip-content='Вы не ввели URL' placeholder='Добавьте ссылку'>
+				<label class='add_project_label' for='add_project_textarea'>Описание</label>
+				<textarea class='inputfield add_project_textarea add_project_textarea' id='add_project_textarea' qtip-content='Вы не ввели описание' placeholder='Пара слов о вашем проекте'></textarea>
+				<input class='add_project_submit' id='add_project_submit' type='submit' value='Добавить'>
 			</form>
 		</div>
 <!--  Конец блока Всплывающее окно добавления проекта  -->
 
-			<aside class="aside">
-				<nav class="nav">
-					<ul class="nav_ul">
-						<li><a class="nav_a" href="index.html">Обо мне</a></li>
-						<li><a class="nav_a current" href="#">Мои работы</a></li>
-						<li><a class="nav_a" href="feedback.html">Обратная связь</a></li>
+			<aside class='aside'>
+				<nav class='nav'>
+					<ul class='nav_ul'>
+						<li><a class='nav_a' href='index.html'>Обо мне</a></li>
+						<li><a class='nav_a current' href='#'>Мои работы</a></li>
+						<li><a class='nav_a' href='feedback.html'>Обратная связь</a></li>
 					</ul>
 				</nav>
-				<div class="contacts">
-					<h1 class="contacts_header">Контакты</h1>
-					<ul class="contacts_ul">
-						<li class="contacts_li"><a class="contacts_a mail" href="mailto:muhammad-114@mail.ru">Muhammad-114@mail.ru</a></li>
-						<li class="contacts_li"><a class="contacts_a tel" href="tel:+79886539941">+7 (988) 653-99-41</a></li>
-						<li class="contacts_li"><a class="contacts_a skype" href="skype:muhammad-114">muhammad-114</a></li>
+				<div class='contacts'>
+					<h1 class='contacts_header'>Контакты</h1>
+					<ul class='contacts_ul'>
+						<li class='contacts_li'><a class='contacts_a mail' href='mailto:muhammad-114@mail.ru'>Muhammad-114@mail.ru</a></li>
+						<li class='contacts_li'><a class='contacts_a tel' href='tel:+79886539941'>+7 (988) 653-99-41</a></li>
+						<li class='contacts_li'><a class='contacts_a skype' href='skype:muhammad-114'>muhammad-114</a></li>
 					</ul>
 				</div>
 			</aside>
-			<main class="main">
-				<section class="section">
-					<h1 class="section_header">Мои работы</h1>
-					<div class="list_of_works">
-							<ul class="list_of_works_ul" id="list_of_works_ul">
-								<li class="list_of_works_li">
-									<a href="http://industry.ru" target="_blank" class="image-work">
-								    <img class="list_of_works_img" src="img/a-industry.jpg" alt="a-industry.ru">
-								    <div class="back-image">
-								      <div class="back-text">Подробнее</div>
+			<main class='main'>
+				<section class='section'>
+					<h1 class='section_header'>Мои работы</h1>
+					<div class='list_of_works'>
+							<ul class='list_of_works_ul' id='list_of_works_ul'>
+								<li class='list_of_works_li'>
+									<a href='http://industry.ru' target='_blank' class='image-work'>
+								    <img class='list_of_works_img' src='img/a-industry.jpg' alt='a-industry.ru'>
+								    <div class='back-image'>
+								      <div class='back-text'>Подробнее</div>
 								    </div>
 								  </a>									
-									<a href="http://industry.ru" target ="_blank" class="site-name-link">a-industry.ru</a>
-									<p class="list_of_works_text">Корпоративный и в тоже время продающий сайт строительной компании a-industry.</p>
+									<a href='http://industry.ru' target ='_blank' class='site-name-link'>a-industry.ru</a>
+									<p class='list_of_works_text'>Корпоративный и в тоже время продающий сайт строительной компании a-industry.</p>
 								</li>
-								<li class="list_of_works_li">
-									<a href="http://домгазобетон.рф" target="_blank" class="image-work">
-								    <img class="list_of_works_img" src="img/domgazbeton.jpg" alt="домгазобетон.рф">
-								    <div class="back-image">
-								      <div class="back-text">Подробнее</div>
+								<li class='list_of_works_li'>
+									<a href='http://домгазобетон.рф' target='_blank' class='image-work'>
+								    <img class='list_of_works_img' src='img/domgazbeton.jpg' alt='домгазобетон.рф'>
+								    <div class='back-image'>
+								      <div class='back-text'>Подробнее</div>
 								    </div>
 								  </a>	
-									<a href="http://домгазобетон.рф" target ="_blank" class="site-name-link">домгазобетон.рф</a>
-									<p class="list_of_works_text">Продающая страница для компании ledenland.</p>
+									<a href='http://домгазобетон.рф' target ='_blank' class='site-name-link'>домгазобетон.рф</a>
+									<p class='list_of_works_text'>Продающая страница для компании ledenland.</p>
 								</li>
-								<li class="list_of_works_li">
-									<a href="http://crmconsulting.biz" target="_blank" class="image-work">
-								    <img class="list_of_works_img" src="img/crmconsulting.jpg" alt="crmconsulting.biz">
-								    <div class="back-image">
-								      <div class="back-text">Подробнее</div>
+								<li class='list_of_works_li'>
+									<a href='http://crmconsulting.biz' target='_blank' class='image-work'>
+								    <img class='list_of_works_img' src='img/crmconsulting.jpg' alt='crmconsulting.biz'>
+								    <div class='back-image'>
+								      <div class='back-text'>Подробнее</div>
 								    </div>
 								  </a>	
-									<a href="http://crmconsulting.biz" target ="_blank" class="site-name-link">crmconsulting.biz</a>
-									<p class="list_of_works_text">Лендинг компании «СRM Consulting» специализирующейся на точной настройке Битрикс24 под бизнес.</p>
+									<a href='http://crmconsulting.biz' target ='_blank' class='site-name-link'>crmconsulting.biz</a>
+									<p class='list_of_works_text'>Лендинг компании «СRM Consulting» специализирующейся на точной настройке Битрикс24 под бизнес.</p>
 								</li>
-								<li class="list_of_works_li">
-									<a href="http://landingsloft.ru" target="_blank" class="image-work">
-								    <img class="list_of_works_img" src="img/landingsloft.jpg" alt="landingsloft.ru">
-								    <div class="back-image">
-								      <div class="back-text">Подробнее</div>
+								<li class='list_of_works_li'>
+									<a href='http://landingsloft.ru' target='_blank' class='image-work'>
+								    <img class='list_of_works_img' src='img/landingsloft.jpg' alt='landingsloft.ru'>
+								    <div class='back-image'>
+								      <div class='back-text'>Подробнее</div>
 								    </div>
 								  </a>
-									<a href="http://landingsloft.ru" target ="_blank" class="site-name-link">landingsloft.ru</a>
-									<p class="list_of_works_text">Сайт по услугам разработки продающих лендингов.</p>
+									<a href='http://landingsloft.ru' target ='_blank' class='site-name-link'>landingsloft.ru</a>
+									<p class='list_of_works_text'>Сайт по услугам разработки продающих лендингов.</p>
 								</li>
-								<li class="list_of_works_li">
-									<a href="http://yasnow.biz" target="_blank" class="image-work">
-								    <img class="list_of_works_img" src="img/yasnow.jpg" alt="yasnow.biz">
-								    <div class="back-image">
-								      <div class="back-text">Подробнее</div>
+								<li class='list_of_works_li'>
+									<a href='http://yasnow.biz' target='_blank' class='image-work'>
+								    <img class='list_of_works_img' src='img/yasnow.jpg' alt='yasnow.biz'>
+								    <div class='back-image'>
+								      <div class='back-text'>Подробнее</div>
 								    </div>
 								  </a>									
-									<a href="http://yasnow.biz" target ="_blank" class="site-name-link">yasnow.biz</a>
-									<p class="list_of_works_text">Landing page по продажи франшизы снежного бизнеса.</p>
+									<a href='http://yasnow.biz' target ='_blank' class='site-name-link'>yasnow.biz</a>
+									<p class='list_of_works_text'>Landing page по продажи франшизы снежного бизнеса.</p>
 								</li>
-								<li class="list_of_works_li list_of_works_last_li">
-									<a class="add_project" id="add_project" href="#">Добавить проект</a>
+								<li class='list_of_works_li list_of_works_last_li'>
+									<a class='add_project' id='add_project' href='#'>Добавить проект</a>
 								</li>
 							</ul>
 					</div>
@@ -161,18 +139,20 @@
 		</div>
 	</div>
 
-	<footer class="footer">
-		<div class="container">
-			<a href="authorization.html" class="a_lock">вход</a>
-			<p class="copyright">&copy; 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</p>
+	<footer class='footer'>
+		<div class='container'>
+			<a href='authorization.html' class='a_lock'>вход</a>
+			<p class='copyright'>&copy; 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</p>
 		</div>
 	</footer>
 
 
-	<script src="bower/jquery/jquery.js"></script>
-	<script src="bower/qtip2/jquery.qtip.js"></script>
-	<script src="bower/bPopup/jquery.bpopup.js"></script>	
-	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
-	<script src="js/main.js"></script>
+	<script src='bower/jquery/dist/jquery.js'></script>
+	<script src='bower/jquery-placeholder/jquery.placeholder.js'></script>
+	<script src='bower/qtip2/jquery.qtip.js'></script>
+	<script src='bower/bPopup/jquery.bpopup.js'></script>	
+	<script src='js/validation.js'></script>
+	<script src="js/script.js"></script>		
+	<script src='js/main.js'></script>
 </body>
 </html>
