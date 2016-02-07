@@ -9,11 +9,12 @@
     $('#feedback_form').on('submit', submitForm);
   }
 
-  function submitForm(e) {
+ function submitForm(event) {
+    event = event || window.event;
+    event.preventDefault ? event.preventDefault() : (event.returnValue=false);
     var form = $(this),
       url = '',
       defObject = ajaxForm(form, url);
-    e.preventDefault();
   }
 
   function ajaxForm(form, url) {

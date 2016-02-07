@@ -7,14 +7,28 @@
 
   function addListener() {
     $('#add_project_form').on('submit', submitForm);
+    $('#add_project').on('click', showModal);
   }
 
-  function submitForm(e) {
+  function submitForm(event) {
+    event = event || window.event;
+    event.preventDefault ? event.preventDefault() : (event.returnValue=false);
     var form = $(this),
       url = '',
       defObject = ajaxForm(form, url);
-    e.preventDefault();
+  }
 
+  function showModal(event) {
+    event = event || window.event;
+    event.preventDefault ? event.preventDefault() : (event.returnValue=false);
+    $('#add_project_popup').bPopup({
+            onClose: function() { 
+                    var form =  $('#add_project_form');
+                    form.find('.inputfield').trigger('hideTooltip'); 
+                    form.find('.has-error').removeClass('has-error');
+                    form.trigger('reset');
+             }
+        });    
   }
 
   function ajaxForm(form, url) {
@@ -34,5 +48,5 @@
       }
     };
   }
-  window.qtp = my;
+  window.mdl = my;
 })();

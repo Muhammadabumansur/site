@@ -3,7 +3,7 @@ var validation = (function() {
   var init = function() {
       _setUpListners();
     },
-    validateForm = function(form) { 
+    validateForm = function(form) { // Проверяет, чтобы все поля формы были не пустыми. Если пустые - вызывает тултипы
 
       var
         self = this,
@@ -24,8 +24,9 @@ var validation = (function() {
     },
 
     _setUpListners = function() { 
-      $('form').on('keydown', '.has-error', _removeError);
+      $('form').on('keydown', '.has-error', _removeError); 
       $('form').on('click', '.has-error', _removeError); 
+      $('form').on('reset', _clearForm); 
     },
 
     _removeError = function() { 
@@ -39,15 +40,18 @@ var validation = (function() {
     },
 
     _clearForm = function(e) { // Очищает форму
-
       var form = $(this);
       form.find('.inputfield').trigger('hideTooltip'); 
       form.find('.has-error').removeClass('has-error');
-
     },
-    _createQtip = function(element, position) { 
-
+    _createQtip = function(element, position) {
       // позиция тултипа
+      if (position === 'right') {
+        position = {
+          my: 'left center',
+          at: 'right center'
+        };
+      } else {
         position = {
           my: 'right center',
           at: 'left center',
@@ -55,6 +59,7 @@ var validation = (function() {
             method: 'shift none'
           }
         };
+      };
 
       // инициализация тултипа
       element.qtip({
