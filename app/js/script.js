@@ -8,6 +8,7 @@
   function addListener() {
     $('#add_project_form').on('submit', submitForm);
     $('#add_project').on('click', showModal);
+    $('#close_popup').on('click', closePopup);
   }
 
   function submitForm(event) {
@@ -30,6 +31,21 @@
              }
         });    
   }
+
+    function closePopup(event) {
+    event = event || window.event;
+    event.preventDefault ? event.preventDefault() : (event.returnValue=false);
+    var bPopup = $('#add_project_popup').bPopup({
+            onClose: function() { 
+                    var form =  $('#add_project_form');
+                    form.find('.inputfield').trigger('hideTooltip'); 
+                    form.find('.has-error').removeClass('has-error');
+                    form.trigger('reset');
+             }
+        });
+    bPopup.close();
+  }
+
 
   function ajaxForm(form, url) {
 

@@ -594,8 +594,20 @@ li {
 input.placeholder, textarea.placeholder { color: #999; }
 
 .qtip-mystyle {
-	background-color: #f00 !important;
-	border-color: #933 !important;
-	color: #fff !important;
+	background-color: #f3a287 !important;
+	background-image: linear-gradient(#f3a287, #f3a287 10%, #d37654) !important;
+	border-color: #f3a287 !important;
+	color: #9a4e32 !important;
 }
 
+.close_popup {
+	position: absolute;
+	right: 10px;
+	top: 0;	
+	font-size: 30px;
+}
+
+.close_popup:hover {
+	cursor: default;
+	color: red;
+}
